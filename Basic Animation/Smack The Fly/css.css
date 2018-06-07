@@ -1,0 +1,11 @@
+
+#fly{
+    position: absolute;
+    top: 40vh;
+    left: 45vw;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VSG test</title>
+   
+    
+    <style>
+    
+          .puls{
+           stroke: black;
+           stroke-width: 1px;
+           width: 50vw;
+            fill: none;
+           stroke-dasharray: 1;
+           stroke-dashoffset: 1;
+              border: 1px solid;
+       }
+       
+      .draw{
+           animation: draw 2s forwards;
+       }
+       
+       @keyframes draw{
+           to{
+               stroke-dashoffset: 0;
+           }
+       }
+       
+       
+        
+    </style>
+    
+</head>
+
+<body>
+   
+
+    <svg class="puls" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780.43 300.58">
+        
+        <title>puls</title><path pathLength=1 class="cls-1" d="M88,202,25,312Z" transform="translate(-24.57 -58.01)"/><path pathLenght=1 class="cls-1" d="M88,202" transform="translate(-24.57 -58.01)"/><polyline pathLength=1  class="cls-1" points="63.43 169.99 63.43 143.99 85.43 169.99 120.43 298.99 154.43 211.99 154.43 108.99 207.43 167.99 238.43 38.99 285.43 121.99 326.43 2.99 326.43 244.99 370.43 137.99 400.43 279.99 453.43 33.99 495.43 220.99 574.43 32.99 574.43 253.99 661.43 103.99 679.43 298.99 736.43 216.99 780.43 216.99"/></svg>
+
+    
+    
+    <script>
+        
+        const ps = document.querySelectorAll(".cls-1");
+        console.log(ps);
+        ps.forEach(drawLetters);
+        
+        function drawLetters(item, index){
+            
+            setTimeout(function(){
+                item.classList.add("draw");
+                
+            }, index * 1000);
+            
+        }
+        
+        
+    </script>
+    </body>
+</html>
+        
+  
+  
+    
+    
+    

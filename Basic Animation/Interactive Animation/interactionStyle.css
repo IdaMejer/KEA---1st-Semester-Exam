@@ -1,0 +1,60 @@
+a {
+  fint-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+#background {
+  background-image: url(Monsterfamilie1.png);
+  background-repeat: no-repeat;
+  width: 1400px;
+  height: 900px;
+}
+.letbirdfly {
+  cursor: pointer;
+  animation: fly 0.1s cubic-bezier(.37,.66,.83,.67) alternate;
+}
+@keyframes fly {
+  to{transform:rotate(70deg)}
+  to{transform:rotate(-30deg)}
+}
+#images{
+  cursor: pointer;
+}
+.birdGone {
+  transform:translate(200px,100px);
+}
+#bird2 {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+#newScene{
+}
+#monsterbehind{
+  visibility: hidden;
+  width: 20%;
+  height: auto;
+  margin-right: 420px;
+  margin-left: 60px;
+  margin-top: 50px;
+  transition: translate 1s;
+}
+#monsterbehind:hover {
+  translate: 0px -150px;
+}
+#birdNewScene{
+  width: 50px;
+  height: auto;
+  visibility: hidden;
+  margin-top: -600px;
+  margin-left: 460px;
+}
+#catchMe{
+  font-size: 30px;
+  color: black;
+  font-family: sans-serif;
+  margin-left: 500px;
+  padding: 20px;
+}

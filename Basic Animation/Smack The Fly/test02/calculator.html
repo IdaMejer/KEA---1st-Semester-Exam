@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Calculator Test</title>
+
+    <style>
+        
+        #p {
+            
+            font-family: sans-serif;
+            align-content: left;
+            color:red;
+        }
+        
+        #box {
+            position: left;
+            left: 50px;
+            width: 300px;
+            height:300px;
+            border: 2px solid black;
+            background-color: white;
+            padding: 5px;
+            text-align: left;
+            align-content: center;
+        }
+        
+        #button1:hover {
+            box-shadow: 0px 0px 10px grey;
+           
+        }
+        #button2:hover {
+            box-shadow: 0px 0px 10px grey;
+            
+        }
+        #button3:hover {
+            box-shadow: 0px 0px 10px grey;
+          
+        }
+        #button4:hover {
+            box-shadow: 0px 0px 10px grey;
+           
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="box">
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <br>
+        <button id="button1">Multiply</button>
+        <button id="button2">Divide</button>
+        <button id="button3">Subtract</button>
+        <button id="button4">Add</button>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+            result
+        <input type="number" id="result">
+        </p>
+
+        <br>
+
+
+
+    </div>
+
+
+    <script>
+        const num1 = document.querySelector("#num1");
+        const num2 = document.querySelector("#num2");
+        const button1 = document.querySelector("#button1");
+        const button2 = document.querySelector("#button2");
+        const button3 = document.querySelector("#button3");
+        const button4 = document.querySelector("#button4");
+        const result = document.querySelector("#result");
+
+        button1.addEventListener("click", multiply);
+
+        function multiply() {
+
+            let product = num1.value * num2.value;
+            console.log(result);
+            result.value = product;
+        }
+
+        button2.addEventListener("click", divide);
+
+        function divide() {
+
+            let product = num1.value / num2.value;
+            console.log(result);
+            result.value = product;
+        }
+
+        button3.addEventListener("click", subtract);
+
+        function subtract() {
+
+            let product = num1.value - num2.value;
+            console.log(result);
+            result.value = product;
+        }
+
+        button4.addEventListener("click", add);
+
+        function add() {
+
+            let product = Math.abs(num1.value) + Math.abs(num2.value);
+            console.log(result);
+            result.value = product;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

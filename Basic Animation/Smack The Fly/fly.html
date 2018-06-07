@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smack the Fly</title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body>
+    <img id="fly" src="fly.jpg" alt="fly">
+
+
+
+
+    <audio id="buzzSound" controls>
+    <source src="buzz.mp3" type="audio/mp3"></audio>
+
+
+
+    <script>
+        const fly = document.querySelector("#fly");
+        const buzzSound = document.querySelector("#buzz");
+        const smackSound = document.querySelector("#smack");
+        let paused = true;
+        let intv;
+        let speed = 1500;
+        
+       fly.addEventListener("click", toggle);
+        
+        function toggle(){
+            if(paused){
+            console.log("start");
+            moveFly();
+            intv = setInterval(moveFly, speed);
+            buzzSound.play();
+            fly.src="fly.jpg";
+            paused=false;
+            
+        }else{
+            console.log("stop");
+            clearInterval(intv);
+            buzzSound.pause();
+            paused=true;
+        }
+    }
+        function moveFly(){
+            fly.style.left=Math.random()*90+"vw";
+            fly.style.top=Math.random()*90+"vw";
+            
+        }
+    
+        
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+#hero {
+    background:red;
+    width: 200px;
+    height: 200px;
+}
+#hero.enable {
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    50% {
+        opacity:0;
+    }
+    
+@keyframes move {
+        from { top:50; left: 75;}
+        to { top 100px, left: 500px; }
+    }
+    
+            #man {
+            width: 960;
+            height: 220px;
+            background-image: url(fail.png);
+            animation: walk 1s steps(8) infinite;
+        }
+        #wrapper {
+            animation: moveMan 4s ease infinite;
+        }
+        @keyframes walk {
+            100%{
+                background-position: -960px;
+            }
+        
+        }
