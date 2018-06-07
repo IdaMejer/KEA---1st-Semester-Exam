@@ -1,0 +1,109 @@
+hr {
+    height: 1px;
+    color: greenyellow;
+    background-color: greenyellow;
+    border: none;
+    clear: both;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+p {
+    color: #000000;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+about {
+    font-family: Helvetica;
+    text-align: left;
+}
+
+h1 {
+    color: black;
+    font-family: Helvetica;
+    text-align: left;
+}
+
+.headline {
+    background-image: url(images/IdaMejer_test14631.jpg);
+    background-size: cover;
+    min-height:250px;
+}
+
+.headline h1,
+.headline p {
+    font-family: Helvetica;
+    color: #FFFFFF;
+    text-align: center;
+}
+.headline .dark {
+    color:#CCCCCC;
+}
+.topnav-right {
+    float: right;
+    margin-right: 60px;
+}
+
+.topnav-right a:hover,
+.topnav-right a.selected {
+    color: greenyellow;
+}
+
+.topnav-right a {
+
+
+
+    padding: 20px 10px 20px 10px;
+
+    float: left;
+    font-family: Helvetica;
+    color: #FFFFFF;
+    text-align: right;
+    text-decoration: none;
+    font-size: 10px;
+    float: left;
+}
+
+button {
+    font-family: Helvetica;
+    color: #FFFFFF;
+    background-color: greenyellow;
+    text-align: center;
+
+}
+
+
+.images {
+    text-align: center;
+    width: 100%;
+}
+
+.images a {
+    margin-right: 30px;
+}
+
+.images img {
+    width: 300px;
+}
+
+.content-left {
+    float:left;
+    width:70%;
+}
+.content-left * {
+    padding-left:20px;
+    text-align:justify;
+}
+.content-right {
+    float:left;
+    text-align:center;
+    width:30%;
+}
+.content-right img {
+    width:140px;
+}
+
+.description {
+    width:100%;
+}
