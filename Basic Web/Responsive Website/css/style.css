@@ -1,0 +1,94 @@
+*{
+ box-sizing: border-box;
+}
+
+input {
+ display: none;
+}
+
+nav{
+ max-height: 0;
+ overflow: hidden;
+}
+
+input:checked ~ nav{
+ max-height: 500px;
+}
+
+
+
+nav  a{
+    
+    text-align: center;
+    display: block;
+    font-family: Open Sans, Helvetica, sans-serif;
+    font-size 2em; /* px, em, rem, % */
+    line-height; 0.5em; }
+
+body {
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+    
+    background-color: #cccccc;
+    
+}
+
+
+
+
+p {font-family: Open Sans, Helvetica, sans-serif;
+font-size 2em; /* px, em, rem, % */
+line-height; 0.5em;
+}
+
+ul {box-sizing: border-box;}
+
+
+h1 {
+    text-align: center;
+    font-family: Open Sans, Helvetica, sans-serif;
+    font-size 2em; /* px, em, rem, % */
+    line-height; 0.5em;
+
+} 
+
+img {
+    width: 100%;
+    background-color: #cccccc
+    
+    
+}
+
+#logo {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #cccccc
+}
+
+#image assets {
+    
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+h3     {
+    
+    font-family: Open Sans, Helvetica, sans-serif;
+    font-size 2em; /* px, em, rem, % */
+    line-height; 0.5em;
+}
+
+h4     {
+    font-family: Open Sans, sans-serif;
+}
+
+p      {
+    font-family: Open Sans, sans-serif;
+}
+
+footer  {
+    font-family: Open Sans, sans-serif;
+    text-align: center
+    
+}
